@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "prismatic-night-402306",
+  "private_key_id": "a72b9b8517b6403d335690bf6d14c360a6bbf384",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDwtbB0k8wgcW4x\n30IKLUStLiBUYQ5a5J3xEFgeXAJuVJ+sQ0/+85flnR2NYx6m/4mK1PELuqXD8WeE\n93523yEir5i+gslXeiBCDAebjGeFL8l30bVxDyVDv3dtf6GQ1CrcNapePDcCEZz7\nt2VYvVpVFbLc3GHWKINKG455pQlEqDovfqC5nWrs6D5883y9+2pUS/x3FC6ZAluC\nlTctT7Wj+c4+hBR1EP2rqPZ9cm2W2XVsY0o+vzhFporgRqOr1B7TVZEXB9L0WAtt\n3GH7Ebo74004oXs+/zXW3LZYGQJnB3kG1PE3SFLkZGo8Nzhkv/WVLlRwPemupwvz\nRClmLOmHAgMBAAECggEAJhCtZLoXU+LBiNcj+TpbERc+xek1R8VofqiALt42WjPo\nA5SqJV4TMsdBAaIKRQwbDZ6KtzlJy9iJ73qOAAaywD/249sIiQdcljqTHL48LqaL\nHHdy0ya7KgwGEFsDIJqUuTnZWnP476BRFsipQ7pp+xORM0u8mGJ+ueztVSpL8r8T\nNVZ8SX+3kLWlc6I8MFcbb62wPbP1fNIJaJZJVf2j6N9GxMOPfAgv9mScOFDsWXrN\nP0WYkuftv5XT3VHhE2SMBkPsqvBiInkMY0wdNxY5ohRK7jRuB84cOIxKlzROfdeI\ngVm6nHJMoBKxYSmAZ1uFDA3I12u4dFGdbSzc1ni2/QKBgQD4n5/FRw16p4iW+Q1N\nrC5z8a+zJypMDH2Ou71XhbfO3uGKeP18d0w3U5mLpn8GgiYADFEDyotukxc+NL3V\nxu+iHt8h/ysrYVvhlCaob7CT6a/iJkVzv9DYCgiSsDHM5S3tzEHuRSRtxdFgG7FI\n4nmqNFNgq7brWFo6jwaOSNg0QwKBgQD32fUOdL+LadCu9se8VZYEDe5w0xW4jc6G\nAjQwOTEKHfxqKAjamrADc/Zv+8O3g8dpWie6XEumTeiL5chAidUTWKMJs7FeLYc3\n+757KAlZAChJNNEugbWjY1Ebnqz3fr6681BB2gFR1TuGKfyZU1G//cUuPSE7PcQP\nuv4egkijbQKBgFt+stdw3H8E5Hla0hCBit7UVKqDgUdXWWWLpZRt+0TANRQ2jmKd\nrIi31UvVS+3jO4TNA4t3oHRi4SzdT/c6LLnmzoq+Uu6195A+azOVVtA4MafyGaEN\nOBgpKRqCiPE0bgCTKLg87bkQEYti5Y1C+y8t7nkm+DwH2byvIeR+3kHtAoGBAJs/\nuGNst8qA5omh5OzQg15Yx6F+Zx2qHdINMVl/iXs32zM3jow31sbi7VupzSd3cQJJ\nyZbPV0d9h4uRzES40XID1GQwXYqLZCaqFt+X7XsFQTbR0bGa6AbHIDf3xYplptz9\nqakGAEudEGLyi9oSuaNUNx3GhrlP8C6WR7UekJdlAoGADces9ISLP7l9TGLZZfkQ\n43J8sOgccG7OCLSvyYonFUw48k5OoStr3zel1TdwyEaXZkSDAMXJvZcCh8EnNQ7Z\nxhvxpiz2NzueP0UC/W5ARh+F4ckb/YbRLYl7JD4MeTTdWT5DH4YcZG+0Vh8mCrFE\nfhQGyZZVl2YtQ4ghYSqMw4U=\n-----END PRIVATE KEY-----\n",
+  "client_email": "darkshot-images@prismatic-night-402306.iam.gserviceaccount.com",
+  "client_id": "111432337976461791641",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/darkshot-images%40prismatic-night-402306.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
