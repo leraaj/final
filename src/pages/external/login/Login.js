@@ -34,7 +34,6 @@ const Login = () => {
           "Access-Control-Allow-Origin": "*",
           "Content-Type": "application/json",
         },
-
         body: JSON.stringify({
           username: username,
           password: password,
@@ -42,30 +41,23 @@ const Login = () => {
       })
         .then(async (response) => {
           const data = await response.json();
+          console.log(data);
           // Validate empty fields
           if (response.ok) {
             setLoading(true);
             const user = data.user;
             const position = data.user.position;
             if (user && position) {
-              if (position === 1) {
-                navigate(data.redirectUrl);
-              } else {
-                navigate(data.redirectUrl);
-              }
+              navigate(data.redirectUrl);
               toast.success("Logged-in successfully");
             }
-          }
-          // Validate Username and Password
-          else {
+          } else {
             toast.error("Invalid username/password");
-            // alert("Invalid username/password");
           }
         })
         .catch((error) => {
           // Validate Server Error
-          toast.error(error.message);
-          console.log({ error: error.message });
+          toast.error("ERROR" + error);
         })
         .finally(() => {
           setLoading(false);
