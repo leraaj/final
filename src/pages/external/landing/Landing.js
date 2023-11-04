@@ -24,8 +24,12 @@ const Index = () => {
       <div className="col-12">
         <ThemeHeader title={textHeading} breakWord={2} />
         <div className="d-flex gap-1 col-12">
-          <ThemeButton textName="Inquire Now" />
-          <ThemeButton textName="Learn more" primary={false} />
+          <ThemeButton textName="Inquire Now" className={"btn-lg"} />
+          <ThemeButton
+            textName="Learn more"
+            primary={false}
+            className={"btn-lg"}
+          />
         </div>
       </div>
     </div>

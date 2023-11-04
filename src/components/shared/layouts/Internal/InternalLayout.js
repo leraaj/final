@@ -5,7 +5,7 @@ import Header from "../../header/Header";
 import Container from "../container/Container";
 import links from "./sidebar/links"; // Import the 'links' array
 const InternalLayout = () => {
-  const [toggler, setToggler] = useState(false);
+  const [toggler, setToggler] = useState(true);
   const adminLinks = links[0];
   const userLinks = links[1];
   const [position, setPosition] = useState(adminLinks);

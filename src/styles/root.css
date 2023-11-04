@@ -21,7 +21,7 @@
 }
 * {
   font-family: "Agdasima-Regular";
-  font-size: 0.88rem;
+  font-size: 14px;
 }
 .internal-theme-font * {
   font-family: "Poppins" !important;
@@ -59,4 +59,20 @@
 .navbar-toggler:active,
 .navbar-toggler:focus {
   box-shadow: none !important;
+}
+.modal-body-title {
+  font-family: "Agdasima-Bold";
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.modal-body-title::before {
+  font-family: "Agdasima-Bold";
+  width: 5px;
+  height: 2rem;
+  background-color: black;
+  content: " ";
+  position: absolute;
+  left: 0px;
 }

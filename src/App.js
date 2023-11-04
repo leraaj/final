@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { Toaster } from "sonner";
 import Loading from "./pages/others/Loading";
 import InternalLayout from "./components/shared/layouts/Internal/InternalLayout";
+import Gdrive from "./pages/external/gdrive/Gdrive";
 // Internal
 const Accounts = lazy(() => import("./pages/internal/accounts/Accounts"));
 const Applicants = lazy(() => import("./pages/internal/applicants/Applicants"));
@@ -44,6 +45,14 @@ function App() {
           element={
             <Suspense fallback={<Loading />}>
               <Register />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/gdrive"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Gdrive />
             </Suspense>
           }
         />
