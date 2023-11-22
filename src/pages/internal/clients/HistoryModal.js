@@ -107,7 +107,7 @@ const HistoryModal = ({ show, onHide, data, refreshData }) => {
         <Modal.Header closeButton>
           <Modal.Title>History Modal</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Applicants previous history</Modal.Body>
+        <Modal.Body>Clients previous history</Modal.Body>
       </Modal>
     </>
   );

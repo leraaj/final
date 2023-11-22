@@ -7,7 +7,9 @@ import ThemeHeader from "../../../components/textHeaders/ThemeHeader";
 import ThemeButton from "../../../components/buttons/ThemeButton";
 import InputField from "../../../components/forms/InputField";
 import { toast } from "sonner";
-const Login = () => {
+const Index = () => {
+  const renderUrl = "https://darkshot-server.onrender.com/api/user/login";
+  const localUrl = "http://localhost:3001/api/user/login";
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -27,7 +29,7 @@ const Login = () => {
       return toast.message("All fields are required");
       // alert("All fields are required");
     } else {
-      await fetch("http://localhost:3001/api/user/login", {
+      await fetch(localUrl, {
         method: "post",
         credentials: "include",
         headers: {
@@ -127,4 +129,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Index;

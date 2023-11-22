@@ -7,12 +7,12 @@ import HistoryModal from "./HistoryModal";
 import { Box } from "@mui/material";
 import ViewIcon from "@mui/icons-material/Visibility";
 import HistoryIcon from "@mui/icons-material/HistoryToggleOff";
-const Applicants = () => {
+const Index = () => {
   const apiEndpoint = "http://localhost:3001/api/";
   const [tableUsers, setTableUsers] = useState([]);
   const [userData, setUserData] = useState([]);
   const [enableLoading, setEnableLoading] = useState(true);
-  const [applicantFilter, setApplicantFilter] = useState(3);
+  const [applicantFilter, setApplicantFilter] = useState(0);
   const displayStatusFilter = [
     { value: 0, label: "All users" },
     { value: 1, label: "Pending" },
@@ -64,9 +64,9 @@ const Applicants = () => {
         console.log(applicantFilter);
         const filteredData = data.filter(
           (item) =>
-            item.position === 3 && item.applicationStatus == applicantFilter
+            item.position === 2 && item.applicationStatus == applicantFilter
         );
-        const allFilter = data.filter((item) => item.position === 3);
+        const allFilter = data.filter((item) => item.position === 2);
         if (applicantFilter == 0) {
           setTableUsers(allFilter);
         } else {
@@ -180,4 +180,4 @@ const Applicants = () => {
   );
 };
 
-export default Applicants;
+export default Index;

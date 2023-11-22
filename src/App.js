@@ -4,16 +4,21 @@ import { Toaster } from "sonner";
 import Loading from "./pages/others/Loading";
 import InternalLayout from "./components/shared/layouts/Internal/InternalLayout";
 import Gdrive from "./pages/external/gdrive/Gdrive";
-// Internal
-const Accounts = lazy(() => import("./pages/internal/accounts/Accounts"));
-const Applicants = lazy(() => import("./pages/internal/applicants/Applicants"));
-const Clients = lazy(() => import("./pages/internal/clients/Clients"));
-const Jobs = lazy(() => import("./pages/internal/jobs/Jobs"));
-const Posts = lazy(() => import("./pages/internal/posts/Posts"));
+
+// Internal - Admin
+const Accounts = lazy(() => import("./pages/internal/accounts/Index"));
+const Applicants = lazy(() => import("./pages/internal/applicants/Index"));
+const Clients = lazy(() => import("./pages/internal/clients/Index"));
+const Jobs = lazy(() => import("./pages/internal/jobs/Index"));
+const Posts = lazy(() => import("./pages/internal/posts/Index"));
+// Internal - Applicant, Client
+const Profile = lazy(() => import("./pages/internal/profile/Index"));
+const Order = lazy(() => import("./pages/internal/order/Index"));
+const MediaFiles = lazy(() => import("./pages/internal/mediaFiles/Index"));
 // External
 const Landing = lazy(() => import("./pages/external/landing/Index"));
-const Login = lazy(() => import("./pages/external/login/Login"));
-const Register = lazy(() => import("./pages/external/register/Register"));
+const Login = lazy(() => import("./pages/external/login/Index"));
+const Register = lazy(() => import("./pages/external/register/Index"));
 // Others
 const NotFound = lazy(() => import("./pages/others/NotFound"));
 function App() {
@@ -49,14 +54,6 @@ function App() {
           }
         />
         <Route
-          path="/gdrive"
-          element={
-            <Suspense fallback={<Loading />}>
-              <Gdrive />
-            </Suspense>
-          }
-        />
-        <Route
           element={
             <Suspense fallback={<Loading />}>
               <InternalLayout />
@@ -72,6 +69,12 @@ function App() {
           <Route path="/jobs" element={<Jobs />} />
           {/* Posts Route */}
           <Route path="/posts" element={<Posts />} />
+          {/* Profile Route */}
+          <Route path="/profile" element={<Profile />} />
+          {/* Order Route */}
+          <Route path="/order" element={<Order />} />
+          {/* MediaFiles Route */}
+          <Route path="/mediaFiles" element={<MediaFiles />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
@@ -82,3 +85,14 @@ function App() {
 }
 
 export default App;
+
+{
+  /* <Route
+          path="/gdrive"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Gdrive />
+            </Suspense>
+          }
+        /> */
+}

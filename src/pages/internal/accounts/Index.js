@@ -8,7 +8,7 @@ import UpdateForm from "./UpdateForm";
 import DeleteForm from "./DeleteForm";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
-const Accounts = () => {
+const Index = () => {
   const apiEndpoint = "http://localhost:3001/api/";
   const [tableUsers, setTableUsers] = useState([]);
   const [userData, setUserData] = useState([]);
@@ -129,7 +129,7 @@ const Accounts = () => {
                 return (
                   <>
                     <SimpleButton
-                      color={"secondary"}
+                      color={"secondary text-uppercase"}
                       size={"sm"}
                       classes={" rounded-0 "}
                       onClick={() => {
@@ -168,4 +168,4 @@ const Accounts = () => {
   );
 };
 
-export default Accounts;
+export default Index;

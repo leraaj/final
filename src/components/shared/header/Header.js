@@ -8,6 +8,7 @@ import ThemeButton from "../../buttons/ThemeButton";
 const Header = ({ toggler, setToggler }) => {
   const location = useLocation();
   const navigate = useNavigate();
+  const locationName = location.pathname.slice(1);
   const handleLogin = () => {
     navigate("/login");
   };
@@ -50,6 +51,9 @@ const Header = ({ toggler, setToggler }) => {
               onClick={() => setToggler(!toggler)}>
               {toggler ? <Open /> : <Close />}
             </button>
+            <span className="d-flex align-items-center text-uppercase fw-bold h5 m-0 p-0">
+              {locationName == "mediaFiles" ? "media files" : locationName}
+            </span>
           </div>
           <div className="d-flex justify-content-end align-items-center navbar-nav">
             <Link to={"/login"} className="nav-link">

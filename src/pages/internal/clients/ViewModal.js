@@ -75,7 +75,7 @@ const ViewModal = ({ show, onHide, data, refreshData }) => {
         <Modal.Header closeButton>
           <Modal.Title className="internal-theme-font">
             <span className="fw-bold text-uppercase h4 m-0 p-0">
-              Applicant Details
+              Client Details
             </span>
           </Modal.Title>
         </Modal.Header>
@@ -118,80 +118,6 @@ const ViewModal = ({ show, onHide, data, refreshData }) => {
                       readOnly
                     />
                   </div>
-                </div>
-                <span className="modal-body-title">media files</span>
-                <div className="row mx-0 p-0 g-2 my-0 py-0 mb-3 internal-theme-font">
-                  <div className="col-auto">
-                    <div className="input-group">
-                      <span className="input-group-text">Resume/CV</span>
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder={`example_resume.docx`}
-                        disabled
-                      />
-                      <a
-                        // Link = https://drive.google.com/uc?export=download&id=
-                        href="https://docs.google.com/document/d/1HUt8MQOOsac8rAlxq0c4DVAl7JQnk0wr/export?format=docx"
-                        target="_blank"
-                        rel="noopener"
-                        className="btn btn-secondary">
-                        Download
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-lg">
-              <div className="row mx-0">
-                <span className="modal-body-title">portfolio</span>
-                <div
-                  className="row m-0 p-0 mb-3 vstack overflow-x-auto col-12"
-                  style={{ height: "120px" }}>
-                  {Array(20)
-                    .fill()
-                    .map((_) => (
-                      <div className="col-auto m-0 p-0">
-                        <img
-                          src={placholder}
-                          className="img-fluid"
-                          alt="Placeholder"
-                          style={{ height: "100px" }}
-                        />
-                      </div>
-                    ))}
-                </div>
-                <span className="modal-body-title">skills</span>
-                <div className="d-flex flex-wrap gap-2 mx-0 py-0 mb-3 internal-theme-font">
-                  {displaySkills && displaySkills.length > 0 ? (
-                    displaySkills.map((skill, index) => (
-                      <button
-                        key={index}
-                        className="btn btn-dark rounded-pill"
-                        disabled>
-                        {skill}
-                      </button>
-                    ))
-                  ) : (
-                    <span>No skills available</span>
-                  )}
-                </div>
-                <span className="modal-body-title">preffered positions</span>
-                <div className="d-flex flex-wrap gap-2 mx-0 py-0 mb-3 internal-theme-font">
-                  {displayPrefferedSkills &&
-                  displayPrefferedSkills.length > 0 ? (
-                    displayPrefferedSkills.map((skill, index) => (
-                      <button
-                        key={index}
-                        className="btn btn-dark rounded-pill"
-                        disabled>
-                        {skill}
-                      </button>
-                    ))
-                  ) : (
-                    <span>No preffered skills available</span>
-                  )}
                 </div>
               </div>
             </div>

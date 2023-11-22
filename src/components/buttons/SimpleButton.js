@@ -20,7 +20,7 @@ const SimpleButton = ({
     <button
       className={`btn ${
         hasSize ? "btn-" + size : ""
-      } btn-${color} d-flex align-items-center text-center gap-1 internal-theme-font
+      } btn-${color} d-flex align-items-center text-center gap-1 
       ${hasAdditionalClasses ? classes : ""} `}
       value={value}
       {...(hasOnclick && {

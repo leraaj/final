@@ -26,6 +26,9 @@
 .internal-theme-font * {
   font-family: "Poppins" !important;
 }
+.external-theme-font {
+  font-family: "Agdasima-Bold" !important;
+}
 .th-fs-1 {
   font-size: calc(72px);
 }

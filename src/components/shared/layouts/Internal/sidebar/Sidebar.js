@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import logo from "../../../../../assets/images/brand/darkshot-logo.png";
 import collapsedLogo from "../../../../../assets/images/brand/collapseLogo.ico";
-import Profile from "../../../../../assets/images/placeholder/profile-placeholder.jpg";
+import Profile from "../../../../../assets/images/placeholder/Img_placeholder.jpg";
 import { Link, useLocation } from "react-router-dom";
 const Sidebar = ({ toggler, links }) => {
   const location = useLocation();
