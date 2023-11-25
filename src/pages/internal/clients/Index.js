@@ -12,7 +12,7 @@ const Index = () => {
   const [tableUsers, setTableUsers] = useState([]);
   const [userData, setUserData] = useState([]);
   const [enableLoading, setEnableLoading] = useState(true);
-  const [applicantFilter, setApplicantFilter] = useState(0);
+  const [applicantFilter, setApplicantFilter] = useState(3);
   const displayStatusFilter = [
     { value: 0, label: "All users" },
     { value: 1, label: "Pending" },

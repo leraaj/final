@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import placholder from "../../../assets/images/placeholder/Img_placeholder.jpg";
+import SimpleHeader from "../../../components/textHeaders/SimpleHeader";
+import ModalHeader from "../../../components/textHeaders/ModalHeader";
 const ViewModal = ({ show, onHide, data, refreshData }) => {
   const updateUserAPI = `http://localhost:3001/api/user/`;
   const [nameValue, setNameValue] = useState(null);
@@ -74,16 +76,14 @@ const ViewModal = ({ show, onHide, data, refreshData }) => {
       <Modal show={show} fullscreen={true} onHide={onHide}>
         <Modal.Header closeButton>
           <Modal.Title className="internal-theme-font">
-            <span className="fw-bold text-uppercase h4 m-0 p-0">
-              Client Details
-            </span>
+            <ModalHeader label={"client details"} />
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="row mx-0">
             <div className="col-12 col-lg">
               <div className="row mx-0 p-0">
-                <span className="modal-body-title">user information</span>
+                <SimpleHeader label={"user information"} />
                 <div className="row mx-0 p-0 g-2 my-0 py-0 mb-3 internal-theme-font">
                   <div class="input-group col-12">
                     <span class="input-group-text" id="basic-addon1">

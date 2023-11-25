@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import SimpleButton from "../../../components/buttons/SimpleButton";
+import ModalHeader from "../../../components/textHeaders/ModalHeader";
 const CreateForm = ({ data, show, onHide, refreshData }) => {
   const apiEndpoint = `http://localhost:3001/api/user/`;
   const [nameValue, setNameValue] = useState(null);
@@ -111,7 +112,9 @@ const CreateForm = ({ data, show, onHide, refreshData }) => {
         keyboard={false}
         className="internal-theme-font">
         <Modal.Header closeButton>
-          <Modal.Title>Create new user</Modal.Title>
+          <Modal.Title>
+            <ModalHeader label={"Create new user"} />
+          </Modal.Title>
         </Modal.Header>
         <form
           id="formCreate"

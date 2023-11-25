@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import SimpleButton from "../../../components/buttons/SimpleButton";
+import ModalHeader from "../../../components/textHeaders/ModalHeader";
 const HistoryModal = ({ show, onHide, data, refreshData }) => {
   const updateUserAPI = `http://localhost:3001/api/user/`;
   const [nameValue, setNameValue] = useState(null);
@@ -105,7 +106,9 @@ const HistoryModal = ({ show, onHide, data, refreshData }) => {
         onHide={onHide}
         className="internal-theme-font">
         <Modal.Header closeButton>
-          <Modal.Title>History Modal</Modal.Title>
+          <Modal.Title>
+            <ModalHeader label={"Job History"} />
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>Applicants previous history</Modal.Body>
       </Modal>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import SimpleButton from "../../../components/buttons/SimpleButton";
+import ModalHeader from "../../../components/textHeaders/ModalHeader";
 const DeleteForm = ({ data, show, onHide, refreshData }) => {
   const deleteUserAPI = "http://localhost:3001/api/user/";
   const validField = (e) => {
@@ -47,7 +48,9 @@ const DeleteForm = ({ data, show, onHide, refreshData }) => {
       {/* Modal Delete User */}
       <Modal show={show} onHide={onHide} className="internal-theme-font">
         <Modal.Header closeButton>
-          <Modal.Title>Delete User</Modal.Title>
+          <Modal.Title>
+            <ModalHeader label={"Delete user"} />
+          </Modal.Title>
         </Modal.Header>
         <form onSubmit={handleSubmit}>
           <Modal.Body>
